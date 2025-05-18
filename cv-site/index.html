@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cv-Richard Sanchez</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <page size="A4">
+    <div class="container">
+      <div class="leftPanel">
+        <img src="picture.png"/>
+        <div class="details">
+          <div class="item bottomLineSeparator">
+            <h2>CONTACT<hr></h2>
+            <div class="smallText">
+                <p><i class="fa fa-phone Icon" aria-hidden="true"></i> +123-456-7890  </p>
+                <p><i class="fa fa-envelope Icon" aria-hidden="true"></i>hello@reallygreatsite.com </p>
+                <p><i class="fa fa-map-marker Icon" aria-hidden="true"></i> 123 Anywhere St... Any City</p>
+                <p></p><i class="fa-solid fa-globe Icon"></i>www.reallygreatsite.com</p>
+            </div>
+          </div>
+          <div class="item bottomLineSeparator">
+            <h2>EDUCATION<hr></h2>
+            <div class="smallText" id="educationList">
+              <p>
+                <b>2029-2030<br/>WARDIERE UNIVERSITY</b>
+                <ul>
+                    <li>Master of Business Management</li>
+                </ul>
+             </p>
+             <p>
+                <b>2025-2029<br/>WARDIERE UNIVERSITY</b>
+                <ul>
+                    <li>Bachelor of Business</li>
+                    <li>GPA:3.8/4.0</li>
+                </ul>
+             </p>
+            </div>
+             <button onclick="addEducation()">+Təhsil əlavə et</button>
+          </div>
+          <div class="smallText">
+            <h2>SKILLS<hr></h2>
+            <ul id="skillsList">
+                <li>Project Management</li>
+                <li>Public Relations</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+                <li>Leadership</li>
+                <li>Effective Communication</li>
+                <li>Critical Thinking</li>
+            </ul>
+             <button onclick="addSkill()">+Bacarıq əlavə et</button>
+          </div>
+          <div class="smallText">
+            <h2>LANGUAGES<hr></h2>
+            <ul id="experienceList">
+                <li>English(fluent)</li>
+                <li>French(fluent)</li>
+                <li>German(basics)</li>
+                <li>Spanish(intermidate)</li>
+            </ul>
+             <button onclick="addWorkExperience()">+Təcrübə əlavə et</button>
+          </div>
+          <div class="form-section">
+            <h2>Əlavə Məlumat</h2>
+            <form id="cvForm">
+              <input type="text" id="inputName" placeholder="Ad" required>
+              <div id="errorName" class="error"></div>
+              <input type="email" id="inputEmail" placeholder="Email" required>
+              <div id="errorEmail" class="error"></div>
+              <input type="date" id="inputDate" required>
+              <div id="errorDate" class="error"></div>      
+              <textarea id="inputDesc" placeholder="Özünü qısa təqdim et..." required></textarea>
+              <div id="errorDesc" class="error"></div>      
+              <button type="button" onclick="saveForm()">Yadda saxla</button>
+            </form>
+          </div>
+         
+        </div>
+      </div>
+      <div class="rightPanel">
+        <div>
+          <h1>
+            Richard Sanchez
+          </h1>
+          <div class="smallText">
+            <h3>Marketing Manager<hr></h3>
+          </div>
+        </div>
+        <div class="prof">
+          <h2>PROFILE<hr></h2>
+          <div class="profile">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis, justo sed feugiat pulvinar., quam ipsum tincidunt enim, ac gravida est metus sit amet neque. Curabitur ut arcu ut nunc finibus accumsan id id elit. 
+            </p>
+            <p>
+              Vivamus non magna quis neque viverra finibus quis a tortor. 
+            </p>
+          </div>
+        </div>
+        <div class="workExperience">
+          <h2>WORK EXPERIENCE<hr></h2>
+          <p><b>Borcelle Studio</b><br>Marketing Manager&Specialist</p>
+          <span><ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, natus soluta illum sint dignissimos nemo.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quae qui, necessitatibus veritatis ad eligendi error suscipit?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis.</li>
+          </ul></span>
+          <p><b>FAUGET STUDIO</b><br>Marketing Manager&Specialist</p>
+          <span><ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, natus soluta illum sint dignissimos nemo.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quae qui, necessitatibus veritatis ad eligendi error suscipit?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis.</li>
+          </ul></span>
+          <p><b>STUDIO SHODWE</b><br>Marketing Manager&Specialist</p>
+          <span><ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, natus soluta illum sint dignissimos nemo.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quae qui, necessitatibus veritatis ad eligendi error suscipit?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis.</li>
+          </ul></span>
+        </div>
+        <div class="reference">
+            <h2>REFERENCE<hr></h2>
+            <table>
+                <tr>
+                    <td><b>ESTELLE DARCY</b></td>
+                    <td><b>HARPER RICHARD</b></td>
+                </tr>
+                <tr>
+                    <td>Wardiere inc /CTO</td>
+                    <td>Wardiere inc /CEO</td>
+                </tr>
+                <tr>
+                    <td>Phone:+123-456-7890</td>
+                    <td>Phone:+123-456-7890</td>
+                </tr>
+                <tr>
+                    <td>Email:hello@reallygreatsite.com</td>
+                    <td>Email:hello@reallygreatsite.com</td>
+                </tr>
+            </table>
+        </div>
+        <div class="profileView" id="profileView">
+            <h2>Profil Məlumatları</h2>
+            <p><strong>Ad:</strong> <span id="viewName"></span></p>
+            <p><strong>Email:</strong> <span id="viewEmail"></span></p>
+            <p><strong>Tarix:</strong> <span id="viewDate"></span></p>
+            <p><strong>Təsvir:</strong> <span id="viewDesc"></span></p>
+            <button onclick="enableEdit()">Düzəliş et</button>
+          </div>
+          <div class="profileEdit" id="profileEdit" style="display:none;">
+            <h2>Məlumatı Redaktə Et</h2>
+            <form id="editForm">
+              <input type="text" id="inputName" placeholder="Ad" required>
+              <input type="email" id="inputEmail" placeholder="Email" required>
+              <input type="date" id="inputDate" required>
+              <textarea id="inputDesc" placeholder="Təsvir..." required></textarea>
+              <button type="submit">Yadda saxla</button>
+              <button type="button" onclick="resetForm()">Hamısını Sıfırla</button>
+            </form>
+          </div>       
+        <div id="editSection" class="edit-mode-box"></div>
+
+        <button class="toggle-edit-btn" onclick="toggleEditMode()">Redaktə Et / Baxış</button>
+        <button class="reset-btn" onclick="resetAll()">Hamısını Sıfırla</button>
+        </div>
+    </div>
+  </page>
+</body>
+</html>

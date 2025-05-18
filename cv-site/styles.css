@@ -1,0 +1,173 @@
+
+body {
+    background: rgb(204,204,204); 
+    margin: 0 auto;
+  }
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+  }
+  page[size="A4"] {  
+    width: 21cm;
+    height: 40cm; 
+  }
+ .smallText,  
+  .smallText p, 
+  .smallText a {
+    text-align: justify;
+  }
+  .leftPanel {
+    color: #f5f6f7;
+    text-decoration: none;
+  }
+  h1 { 
+    font-size: 50px;
+    font-weight: 200;
+    margin: 1px 2px;
+    text-transform: uppercase; 
+    color: #111;
+  }
+  h2 {
+    margin: 15px 4px;
+  }
+  .Icon {
+    text-align: center;
+    margin:  5px 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  .leftPanel {
+    width: 35%;
+    background-color: #1f3751;
+    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rightPanel {
+    width: 65%;
+    padding: 10px;
+  }
+  h3 hr{
+    height: 6px;
+    width: 100px;
+    color:#1f3751;
+    background-color: #1f3751;
+    margin: 20px;
+  }
+  .leftPanel img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-position: 50% 50%;
+  }
+  .leftPanel .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .workExperience h2,
+  .reference h2,
+  .prof h2{
+    color: #1f3751;
+    padding: 30px 0  0 15px;
+  }
+  .profile p,
+  .workExperience p{
+    color: rgb(59, 59, 59);
+  }
+  .workExperience  ul li {
+   color: rgb(59, 59, 59);
+  }
+  .reference tr td{
+    color: rgb(59, 59, 59);
+  }
+  .form-section {
+    margin-top: 30px;
+  }
+  input, textarea {
+    display: block;
+    width: 90%;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f7b80acd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: #fff;
+  }
+  .profileView {
+    margin-top: 100px;
+    
+  }
+  .editable-input {
+    width: 95%;
+    padding: 6px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .toggle-edit-btn {
+    background-color: #1f3751;
+    color: white;
+    padding: 8px 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .toggle-edit-btn:hover {
+    background-color: #2d4a6b;
+  }
+  .reset-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 8px 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .reset-btn:hover {
+    background-color: #cc0000;
+  }
+  .edit-mode-box {
+    background-color: #f5f5f5;
+    border: 1px dashed #aaa;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .save-btn:hover {
+    background-color: #3e8e41;
+  }
